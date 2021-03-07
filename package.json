@@ -1,0 +1,14 @@
+{
+  "name": "digikala",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "node-sass style/Product-style.scss --output style/css --watch",
+    "watch": "run build style --watch"
+  },
+
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
