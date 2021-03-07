@@ -1,0 +1,39 @@
+@mixin search-box($margin-right,$icon-position-right,$icon-position-top) {
+    margin-right: $margin-right;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: relative;
+    &::before{
+        content: "\E1D5\00FE0E";
+        position: absolute;
+        right: $icon-position-right;
+        top: $icon-position-top;
+        font-size: 16px;
+    }
+}
+
+// @mixin search-box-icon() {
+//     width: 20px;
+//     height: 20px;
+//     position: absolute;
+//     z-index: 999;
+//     margin-right: 15px;
+//     height: 100%;
+//     margin-top: 20px;
+//     color: rgb(172, 174, 179);
+// }
+
+@mixin search-box-input($width,$padding-right) {
+    width: $width;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(240, 240, 241);
+    outline: none;
+    font-family: $font;
+    font-size: $font-size;
+    padding-right: $padding-right;
+}

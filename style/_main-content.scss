@@ -119,39 +119,39 @@
                 }
 
                 .boxes-content__search-box{
-                    margin-right: 10px;
-                    width: 100%;
-                    height: 39px;
-                    display: flex;
-                    flex-flow: row nowrap;
-                    align-items: center;
-                    position: relative;
+                    @include search-box(10px,4px,0px);
+                    // margin-right: 10px;
+                    // width: 100%;
+                    // height: 39px;
+                    // display: flex;
+                    // flex-flow: row nowrap;
+                    // align-items: center;
+                    // position: relative;
                 
-                    .boxes-content__search-box__icon{
-                        width: 20px;
-                        height: 20px;
-                        position: absolute;
-                        z-index: 999;
-                        height: 100%;
-                        margin-top: 20px;
-                        color: rgb(172, 174, 179);
+                    // .boxes-content__search-box__icon{
+                    //     width: 20px;
+                    //     height: 20px;
+                    //     position: absolute;
+                    //     z-index: 999;
+                    //     height: 100%;
+                    //     margin-top: 20px;
+                    //     color: rgb(172, 174, 179);
                         
-                    }
+                    // }
 
-                    input{
-                        width: 94%;
-                    }
+                 
 
                     .search-box_input{
+                        @include search-box-input(90%,20px);
                         // width: 60%;
-                        height: 100%;
-                        border-radius: 5px;
-                        border: none;
-                        background-color: rgb(240, 240, 241);
-                        outline: none;
-                        font-family: $font;
-                        font-size: $font-size;
-                        padding-right: 35px;
+                        // height: 100%;
+                        // border-radius: 5px;
+                        // border: none;
+                        // background-color: rgb(240, 240, 241);
+                        // outline: none;
+                        // font-family: $font;
+                        // font-size: $font-size;
+                        // padding-right: 35px;
                     }
 
                     
